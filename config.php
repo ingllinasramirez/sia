@@ -1,0 +1,32 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+ini_set('max_input_time', 3000);
+ini_set('max_execution_time', 3000);
+ini_set('memory_limit', '640M');
+// ini_set('post_max_size', '258M');
+date_default_timezone_set('America/Guayaquil');
+set_time_limit(3000);
+if (!defined('CLAVE_SECRETA_SICAM')) define('CLAVE_SECRETA_SICAM', 'c4m4r4d3c0m3rc10d3s4nt4m4r4t4');
+if (!defined('URL_SIA_API')) define('URL_SIA_API', 'https://apisia-jpllinas.c9users.io');
+if (!defined('URL_SIA_APP')) define('URL_SIA_APP',  'https://sia-jpllinas.c9users.io');
+ 
+if (!defined('SESION')) define('SESION', 'USUARIO');
+if (!defined('SESION_ESTADO')) define('SESION_ESTADO', 'SESION_ESTADO');
+if (!defined('WS')) define('WS', '/');
+if (!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
+if (!defined('DIR_BASE')) define('DIR_BASE',  __DIR__ . DS);
+if (!defined('DIR_SIA_API')) define('DIR_SIA_API',  DIR_BASE);
+if (!defined('DIR_MODELOS')) define('DIR_MODELOS',  DIR_BASE. 'modelos/');
+if (!defined('DIR_TMPLCORREOS')) define('DIR_TMPLCORREOS', DIR_MODELOS . 'correos' . DS);
+if (!defined('DIR_SIA_APP')) define('DIR_SIA_APP', DIR_BASE);
+if (!defined('DIR_LIBRERIA')) define('DIR_LIBRERIA', DIR_SIA_APP.'libs/');
+if (!defined('DIR_COMPONENTES')) define('DIR_COMPONENTES', DIR_SIA_APP.'componentes/');
+if (!defined('DIR_ARCHIVOS')) define('DIR_ARCHIVOS', DIR_SIA_APP.'archivo/');
+if (!defined('URL_ARCHIVOS')) define('URL_ARCHIVOS', URL_SIA_APP.'archivo/');
+if (!defined('DIR_PLANTILLAS')) define('DIR_PLANTILLAS',   DIR_SIA_APP . 'plantillas' . DS);
+if (!defined('PLANTILLA_ACTIVA')) define('PLANTILLA_ACTIVA', 'basica'.DS);
+if (!defined('EXT_CONTROLADOR')) define('EXT_CONTROLADOR', ".control.php");
+if (!defined('EXT_VISTA')) define('EXT_VISTA', ".html.php");
+if (!defined('DIR_APPS')) define('DIR_APPS',  DIR_BASE.'apps/');
